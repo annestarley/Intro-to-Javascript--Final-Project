@@ -9,9 +9,11 @@
 
 <!-- HTML -->
 
+<header>
+  <h2 style="color: #42FF78;">Anne's</h2><h2 style="color: #907AFF;"> DVDs          </h2>
+  <p style="color: #42ff78">The complete collection.</p>
+</header>
 <body>
-  <h2>Anne's DVDs</h2>
-  <p>The complete collection.</p>
   <div class="Grid">
     <div class="Grid-button">
       <button id="Comedy"><h4>Comedy</h4></button>
@@ -435,47 +437,12 @@
       }
     ]
 
-    // for comedies
-    // button stuff
-
-
-    // function createComedyMovie() {
-    //   var movieImg = $("<img>");
-    //   if (movies.picture) {
-    //     movieImg.attr('src', comedyMovie.image);
-    //   } else {
-    //     movieImg.attr('src', "http://lorempixel.com/32/32");
-    //   }
-    //   container.append(movieImg);
-    //   if (movies.comedy) {
-    //     var container = $('<div id="comedyMovie-' + comedyMovie.id + '">');
-    //     container.addClass("comedyMovie");
-    //
-    //     var title = $('<h4>');
-    //     title.text(comedyMovie.title);
-    //     container.append(title);
-    //
-    //     var format = $("<div>");
-    //     format.text(comedyMovie.format);
-    //   //  format.addClass("format");
-    //     container.append(format);
-    //
-    //     var notes = $("<p>");
-    //     notes.text(comedyMovie.notes);
-    //     container.append(notes);
-    //
-    //     return container;
-    //   }
-    // }
-
-
-
     // COMEDIES
-    // $("button").click(function(event) {
     $("#Comedy").click(function(event) {
       var buttonPushed = event.target;
       var genre = Comedy //buttonPushed.id;
       var container = $("#container")
+      container.empty();
 
       for (var i = 0; i < movies.length; i++) {
         if (movies[i].Comedy) //[genre])
@@ -489,7 +456,7 @@
           }
           container.append(movieImg);
 
-          var title = $('<h4>');
+          var title = $('<h3>');
           title.text(movies[i].title);
           container.append(title);
 
@@ -518,6 +485,7 @@
       var buttonPushed = event.target;
       var genre = Drama //buttonPushed.id;
       var container = $("#container")
+      container.empty();
 
       for (var i = 0; i < movies.length; i++) {
         if (movies[i].Drama) //[genre])
@@ -531,7 +499,7 @@
           }
           container.append(movieImg);
 
-          var title = $('<h4>');
+          var title = $('<h3>');
           title.text(movies[i].title);
           container.append(title);
 
@@ -560,6 +528,7 @@
       var buttonPushed = event.target;
       var genre = Action //buttonPushed.id;
       var container = $("#container")
+      container.empty();
 
       for (var i = 0; i < movies.length; i++) {
         if (movies[i].Action) //[genre])
@@ -573,7 +542,7 @@
           }
           container.append(movieImg);
 
-          var title = $('<h4>');
+          var title = $('<h3>');
           title.text(movies[i].title);
           container.append(title);
 
@@ -602,6 +571,7 @@
       var buttonPushed = event.target;
       var genre = Musical //buttonPushed.id;
       var container = $("#container")
+      container.empty();
 
       for (var i = 0; i < movies.length; i++) {
         if (movies[i].Musical) //[genre])
@@ -615,7 +585,7 @@
           }
           container.append(movieImg);
 
-          var title = $('<h4>');
+          var title = $('<h3>');
           title.text(movies[i].title);
           container.append(title);
 
@@ -644,6 +614,7 @@
       var buttonPushed = event.target;
       var genre = Kids //buttonPushed.id;
       var container = $("#container")
+      container.empty();
 
       for (var i = 0; i < movies.length; i++) {
         if (movies[i].Kids) //[genre])
@@ -657,7 +628,7 @@
           }
           container.append(movieImg);
 
-          var title = $('<h4>');
+          var title = $('<h3>');
           title.text(movies[i].title);
           container.append(title);
 
@@ -687,6 +658,7 @@
       var buttonPushed = event.target;
       var genre = Workout //buttonPushed.id;
       var container = $("#container")
+      container.empty();
 
       for (var i = 0; i < movies.length; i++) {
         if (movies[i].Workout) //[genre])
@@ -700,7 +672,7 @@
           }
           container.append(movieImg);
 
-          var title = $('<h4>');
+          var title = $('<h3>');
           title.text(movies[i].title);
           container.append(title);
 

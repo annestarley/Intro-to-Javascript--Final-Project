@@ -1,4 +1,33 @@
 /* for small screens */
+@import url('https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Pangolin');
+
+body {
+  /*background-image: url("./images/background-gold.jpg");
+  background-size: 25%;*/
+  /*background-repeat: no-repeat;
+  background-color: black;*/
+  background: #2a2a2a;
+  font-family: 'Pangolin', cursive;
+  }
+
+  header {
+    background-color: #474747;
+    font-family: 'Pangolin', cursive;
+  }
+
+h2 {
+  display: inline;
+  font-weight: bold;
+}
+
+header p {
+  display: inline;
+}
+
+  h2, h3, p, div {
+    color: silver;
+  }
+
 
 .format {
   display: inline;
@@ -6,7 +35,7 @@
   font-size: 12px;
 }
 
-h4 {
+h3, div {
   display: inline;
 }
 
@@ -26,6 +55,7 @@ p {
   /*background-color: #FF695E;*/
   text-align: center;
   margin: 10px;
+  background-color: #42FF78;
 }
 
 .Grid-container {
@@ -34,6 +64,7 @@ p {
   text-align: left;
   margin: 10px;
   padding: 2px;
+  background-color: #474747;
 }
 
 button {
