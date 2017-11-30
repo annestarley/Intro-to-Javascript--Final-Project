@@ -1,0 +1,1 @@
+This page sorts the movies that I have stored in an object by genre when I click the genre button. The site also include other movie parameters such as ratings, format, and personalized comments on the film.
