@@ -10,5 +10,5 @@ Languages used for this project include:
 Query selectors were used to account for different screen sizes.  
   
 ![](https://github.com/annestarley/Movie-Sorter/blob/gh-pages/images/Screen%20Shot%202018-02-01%20at%202.15.00%20PM.png)  
-![] (https://github.com/annestarley/Movie-Sorter/blob/gh-pages/images/Screen%20Shot%202018-02-01%20at%202.14.40%20PM.png)  
-![] (https://github.com/annestarley/Movie-Sorter/blob/gh-pages/images/Screen%20Shot%202018-02-01%20at%202.15.19%20PM.png)  
+![](https://github.com/annestarley/Movie-Sorter/blob/gh-pages/images/Screen%20Shot%202018-02-01%20at%202.14.40%20PM.png)  
+![](https://github.com/annestarley/Movie-Sorter/blob/gh-pages/images/Screen%20Shot%202018-02-01%20at%202.15.19%20PM.png)  
