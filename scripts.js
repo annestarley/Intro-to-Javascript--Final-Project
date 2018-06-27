@@ -397,11 +397,13 @@ var movies = [{
   }
 ]
 
+
 // COMEDIES
 $("#Comedy").click(function(event) {
   var buttonPushed = event.target;
   var genre = Comedy //buttonPushed.id;
   var container = $("#container")
+  var button = document.querySelector('#Comedy')
   container.empty();
 
   for (var i = 0; i < movies.length; i++) {
@@ -437,6 +439,16 @@ $("#Comedy").click(function(event) {
       container.append(line);
     }
   }
+
+  if (button.classList.contains('active')) {
+    button.classList.remove('active')
+    container.empty();
+    const h3 = document.createElement('h3')
+    h3.innerText = "What movie will you watch? Select a genre!"
+    container.append(h3)
+  } else {
+    button.classList.add('active')
+  }
 })
 
 
@@ -445,6 +457,8 @@ $("#Drama").click(function(event) {
   var buttonPushed = event.target;
   var genre = Drama //buttonPushed.id;
   var container = $("#container")
+  var button = document.querySelector('#Drama')
+
   container.empty();
 
   for (var i = 0; i < movies.length; i++) {
@@ -480,6 +494,16 @@ $("#Drama").click(function(event) {
       container.append(line);
     }
   }
+
+  if (button.classList.contains('active')) {
+    button.classList.remove('active')
+    container.empty();
+    const h3 = document.createElement('h3')
+    h3.innerText = "What movie will you watch? Select a genre!"
+    container.append(h3)
+  } else {
+    button.classList.add('active')
+  }
 })
 
 
@@ -488,6 +512,8 @@ $("#Action").click(function(event) {
   var buttonPushed = event.target;
   var genre = Action //buttonPushed.id;
   var container = $("#container")
+  var button = document.querySelector('#Action')
+
   container.empty();
 
   for (var i = 0; i < movies.length; i++) {
@@ -523,6 +549,16 @@ $("#Action").click(function(event) {
       container.append(line);
     }
   }
+
+  if (button.classList.contains('active')) {
+    button.classList.remove('active')
+    container.empty();
+    const h3 = document.createElement('h3')
+    h3.innerText = "What movie will you watch? Select a genre!"
+    container.append(h3)
+  } else {
+    button.classList.add('active')
+  }
 })
 
 
@@ -531,6 +567,8 @@ $("#Musical").click(function(event) {
   var buttonPushed = event.target;
   var genre = Musical //buttonPushed.id;
   var container = $("#container")
+  var button = document.querySelector('#Musical')
+
   container.empty();
 
   for (var i = 0; i < movies.length; i++) {
@@ -566,6 +604,16 @@ $("#Musical").click(function(event) {
       container.append(line);
     }
   }
+
+  if (button.classList.contains('active')) {
+    button.classList.remove('active')
+    container.empty();
+    const h3 = document.createElement('h3')
+    h3.innerText = "What movie will you watch? Select a genre!"
+    container.append(h3)
+  } else {
+    button.classList.add('active')
+  }
 })
 
 
@@ -574,6 +622,8 @@ $("#Kids").click(function(event) {
   var buttonPushed = event.target;
   var genre = Kids //buttonPushed.id;
   var container = $("#container")
+  var button = document.querySelector('#Kids')
+
   container.empty();
 
   for (var i = 0; i < movies.length; i++) {
@@ -609,6 +659,16 @@ $("#Kids").click(function(event) {
       container.append(line);
     }
   }
+
+  if (button.classList.contains('active')) {
+    button.classList.remove('active')
+    container.empty();
+    const h3 = document.createElement('h3')
+    h3.innerText = "What movie will you watch? Select a genre!"
+    container.append(h3)
+  } else {
+    button.classList.add('active')
+  }
 })
 
 
@@ -618,6 +678,8 @@ $("#Workout").click(function(event) {
   var buttonPushed = event.target;
   var genre = Workout //buttonPushed.id;
   var container = $("#container")
+  var button = document.querySelector('#Workout')
+
   container.empty();
 
   for (var i = 0; i < movies.length; i++) {
@@ -652,5 +714,15 @@ $("#Workout").click(function(event) {
       var line = ("<hr>");
       container.append(line);
     }
+  }
+
+  if (button.classList.contains('active')) {
+    button.classList.remove('active')
+    container.empty();
+    const h3 = document.createElement('h3')
+    h3.innerText = "What movie will you watch? Select a genre!"
+    container.append(h3)
+  } else {
+    button.classList.add('active')
   }
 })
